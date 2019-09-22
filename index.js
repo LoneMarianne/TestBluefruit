@@ -56,12 +56,12 @@ function refreshDeviceList(){
 
 function onDiscoverDevice(device){
 	//Make a list in html and show devises
-	//if(device.name == "TESTLONE"){
+	if(device.name == "TESTLONE"){
 		var listItem = document.createElement('li'),
 		html = device.name+ "," + device.id;
 		listItem.innerHTML = html;
 		document.getElementById("bleDeviceList").appendChild(listItem);
-	//}
+	}
 }
 
 
@@ -94,7 +94,7 @@ function onConnError(){
 function data(txt){
 	messageInput.value = txt;
 	GemtInput.value = txt;
-	onSend();
+	sendData();
 }	
 
 function sendData() { // send data to Arduino
