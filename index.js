@@ -92,7 +92,6 @@ function onConnError(){
 }
 
 function data(txt){
-	messageInput.value = txt;
 	GemtInput.value = txt;
 	sendData();
 }	
@@ -103,7 +102,7 @@ function sendData() { // send data to Arduino
 }
 	
 function onSend(){
-	document.getElementById("sendDiv").innerHTML = "Sent: " + messageInput.value + "<br/>";
+	document.getElementById("sendDiv").innerHTML = "Sent: " + GemtInput.value + "<br/>";
 }
 
 //Virker ikke
