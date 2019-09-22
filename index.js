@@ -93,10 +93,13 @@ function onConnError(){
 
 function data(txt){
 	messageInput.value = txt;
+	GemtInput.value = txt;
+	onSend();
 }	
 
 function sendData() { // send data to Arduino
-	 var data = stringToBytes(messageInput.value);
+	// var data = stringToBytes(messageInput.value);
+	var data = stringToBytes(GemtInput.value)
 	ble.writeWithoutResponse(ConnDeviceId, blue.serviceUUID, blue.txCharacteristic, data, onSend, onError);
 }
 	
