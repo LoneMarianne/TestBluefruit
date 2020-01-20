@@ -14,7 +14,7 @@
     <content src="index.html" />
 	
 <gap:plugin name="cordova-plugin-ble-central" source="npm" />
-<preference name="phonegap-version" value="cli-7.1.0" />
+<preference name="phonegap-version" value="cli-9.0.0" />
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
