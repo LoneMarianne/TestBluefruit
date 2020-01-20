@@ -2,7 +2,11 @@
 
 
 
-<widget id="dk.kea.testbluefruit" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="dk.kea.testbluefruit" 
+     version="0.0.2" 
+	 xmlns="http://www.w3.org/ns/widgets" 
+	 xmlns:android="http://schemas.android.com/apk/res/android" 
+	 xmlns:cdv="http://cordova.apache.org/ns/1.0">
 
     <name>Test Bluefruit 2</name>
     <description>
@@ -15,12 +19,19 @@
 
     <content src="index.html" />
 	
-<gap:plugin name="cordova-plugin-ble-central" source="npm" />
-<preference name="phonegap-version" value="cli-7.1.0" />
+	<gap:plugin name="cordova-plugin-ble-central" source="npm" />
+	<plugin name="cordova-plugin-whitelist" spec="*" />
+	
+	<preference name="phonegap-version" value="cli-7.1.0" />
 
-    <engine name="android" spec="latest" />
-    <engine name="ios" spec="latest" />
+
     <access origin="*" />
+	<allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
   
     <platform name="android">
         <allow-intent href="market:*" />
@@ -29,4 +40,6 @@
         <preference name="Orientation" value="all" />
         <preference name="AutoHideSplashScreen" value="false" />
     </platform>
+	<engine name="android" spec="latest" />
+    <engine name="ios" spec="latest" />
 </widget>
