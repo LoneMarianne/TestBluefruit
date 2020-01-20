@@ -107,7 +107,7 @@ function onSend(){
 
 //Virker ikke
 function disconnect() {
-	ble.disconnect(deviceId, onDisconnect, onError);
+	ble.disconnect(ConnDeviceId, onDisconnect, onError);
 }
 
 function onDisconnect(){

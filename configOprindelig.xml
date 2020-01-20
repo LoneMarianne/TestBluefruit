@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="dk.kea.testbluefruit5" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 
-    <name>Test Bluefruit 0</name>
+    <name>Test Bluefruit 5</name>
     <description>
         A sample app from a phone  BLE hardware.
     </description>
@@ -13,8 +13,9 @@
 
     <content src="index.html" />
 	
-	<gap:plugin name="cordova-plugin-ble-central" source="npm" />
-	<preference name="phonegap-version" value="cli-6.1.0" />
+	<plugin name="cordova-plugin-ble-central" spec="^1.1.4">
+        
+    </plugin>
 	
 	<engine name="android" spec="~6.4.0" />
     <engine name="ios" spec="^4.5.3" />
