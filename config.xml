@@ -22,7 +22,7 @@
 	<gap:plugin name="cordova-plugin-ble-central" source="npm" />
 	<plugin name="cordova-plugin-whitelist" spec="*" />
 	
-	<preference name="phonegap-version" value="cli-7.1.0" />
+	<preference name="phonegap-version" value="cli-9.0.0" />
 
 
     <access origin="*" />
